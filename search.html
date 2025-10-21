@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library | Search Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>E-Library System</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login / Register</a>
+        <a href="search.html" class="active">Search Books</a>
+        <a href="history.html">Borrow History</a>
+    </nav>
+</header>
+
+<main>
+    <section class="search-section">
+        <h2>Search Books</h2>
+        <form class="search-form">
+            <input type="text" placeholder="Search by title, author, or keyword..." required>
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Classic</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>Dystopian</td>
+                    <td>Borrowed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 E-Library. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
