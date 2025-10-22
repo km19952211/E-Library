@@ -1,4 +1,4 @@
-/* ===== GENERAL STYLES ===== */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +7,14 @@
 }
 
 body {
-    background-color: #f9f5f0; /* خلفية أوف وايت دافئة */
-    color: #3a2e27; /* بني غامق للنص */
+    background-color: #f9f5f0; 
+    color: #3a2e27;
     line-height: 1.7;
 }
 
-/* ===== HEADER ===== */
+
 header {
-    background-color: #d9c3a9; /* خشبي فاتح */
+    background-color: #d9c3a9; 
     color: #3a2e27;
     padding: 20px;
     text-align: center;
@@ -46,7 +46,7 @@ nav a.active {
     background-color: #e8d5b5;
 }
 
-/* ===== MAIN CONTENT ===== */
+
 main {
     padding: 40px 10%;
     min-height: 70vh;
@@ -70,7 +70,7 @@ main {
 }
 
 .btn {
-    background-color: #b68b4c; /* ذهبي خشبي */
+    background-color: #b68b4c; 
     color: white;
     padding: 10px 22px;
     text-decoration: none;
@@ -93,7 +93,7 @@ main {
     background-color: #6b5a4d;
 }
 
-/* ===== FORM SECTION ===== */
+
 .form-section {
     max-width: 600px;
     margin: 50px auto;
@@ -127,7 +127,7 @@ input {
     color: #3a2e27;
 }
 
-/* ===== SEARCH / HISTORY SECTIONS ===== */
+
 .search-section, .history-section {
     background: #fffaf4;
     padding: 30px;
