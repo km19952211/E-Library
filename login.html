@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Library | Login</title>
     <link rel="stylesheet" href="css/style.css">
-     <script src="js/script.js" defer> </script>
+     <script src="js/login-register.js" defer> </script>
+</head>
 </head>
 <body>
 <header>
@@ -21,7 +22,7 @@
 <main>
     <section class="form-section">
         <h2>Login</h2>
-        <form>
+        <form id="loginForm">
             <label>Email</label>
             <input type="email" placeholder="Enter your email" required>
 
@@ -32,15 +33,15 @@
         </form>
 
         <h3>Don’t have an account?</h3>
-        <form>
+        <form id="registerForm">
             <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" name="fullname" required >
 
             <label>Email</label>
-            <input type="email" placeholder="Enter your email" required>
+            <input type="email" placeholder="Enter your email" name="email" required>
 
             <label>Password</label>
-            <input type="password" placeholder="Create a password" required>
+            <input type="password" placeholder="Create a password" name="password" required>
 
             <button type="submit" class="btn secondary">Register</button>
         </form>
