@@ -4,7 +4,7 @@ require_once '../config.php';
 require_once '../JsonResponse.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['register_fullName'] ?? '';
+    $name = $_POST['register_fullname'] ?? '';
     $email = $_POST['register_email'] ?? '';
     $password = $_POST['register_password'] ?? '';
 

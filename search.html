@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Library | Search Books</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/books.js"></script>
 </head>
 <body>
 <header>
@@ -30,24 +31,14 @@
                 <tr>
                     <th>Title</th>
                     <th>Author</th>
-                    <th>Category</th>
-                    <th>Availability</th>
+                    <th>Genre</th>
+                    <th>Publish Year</th>
+                    <th>Borrow</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>The Great Gatsby</td>
-                    <td>F. Scott Fitzgerald</td>
-                    <td>Classic</td>
-                    <td>Available</td>
-                </tr>
-                <tr>
-                    <td>1984</td>
-                    <td>George Orwell</td>
-                    <td>Dystopian</td>
-                    <td>Borrowed</td>
-                </tr>
-            </tbody>
+            <tbody id="booksBody"></tbody>
+                
+          
         </table>
     </section>
 </main>

@@ -17,34 +17,53 @@
         <a href="history.html">Borrow History</a>
     </nav>
 </header>
-
 <main>
-    <section class="form-section">
-        <h2>Login</h2>
-        <form id="loginForm">
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email"  name="login_email" required>
+    <div id="loginSuccessScreen" 
+     style="display:none; text-align:center; padding:40px;">
 
-            <label>Password</label>
-            <input type="password"  placeholder="Enter your password" name="login_password" required>
+    <h2 style="color:#3a2e27; margin-bottom:15px;">🎉 Login Successful!</h2>
 
-            <button type="submit" class="btn">Login</button>
-        </form>
+    <p style="color:#5a4a42; font-size:1.1em; margin-bottom:25px;">
+        Welcome back! You can now explore our library and borrow books instantly.
+    </p>
 
-        <h3>Don’t have an account?</h3>
-        <form id="registerForm">
-            <label>Full Name</label>
-            <input type="text" placeholder="Enter your name" name="register_fullname" required >
+    <a href="search.html" class="btn">Start Searching</a>
+</div>
+<section class="form-section">
+    <h2>Login</h2>
+    <div id="loginErrorMsg" class="error-message" style="display:none;">
+</div>
+    <form id="loginForm">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" name="login_email" required>
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" name="register_fullname" required>
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" name="login_password" required>
 
-            <label>Password</label>
-            <input type="password" placeholder="Create a password" name="register_fullname" required>
+        <button type="submit" class="btn">Login</button>
+    </form>
 
-            <button type="submit" class="btn secondary">Register</button>
-        </form>
-    </section>
+    <h3>Don’t have an account?</h3>
+
+    
+    <div id="registerSuccessMsg" class="success-message" style="display:none;">
+        ✔️ Account created successfully! You can now log in.
+    </div>
+
+    <form id="registerForm">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" name="register_fullname" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" name="register_email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create a password" name="register_password" required>
+
+        <button type="submit" class="btn secondary">Register</button>
+    </form>
+</section>
+
 </main>
 
 <footer>

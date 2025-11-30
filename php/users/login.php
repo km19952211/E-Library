@@ -20,10 +20,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         if (password_verify($password, $user['password'])) {
+            $token = bin2hex(random_bytes(32));
+
+            
+            $updateStmt = $conn->prepare("UPDATE users SET token = ? WHERE id = ?");
+            $updateStmt->bind_param("si", $token, $user['id']);
+            $updateStmt->execute();
+
+          
             JsonResponse::success("✅ Login successful", [
                 'id' => $user['id'],
                 'name' => $user['fullname'],
-                'email' => $user['email']
+                'email' => $user['email'],
+                'token' => $token
             ]);
         } else {
             JsonResponse::error("❌ Password is not correct!", [], 401);
